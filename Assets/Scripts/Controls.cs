@@ -145,7 +145,7 @@ public class Controls : MonoBehaviour
                     if(GetType().GetField(kcode.ToString()) != null)
                     {
                         //When we know that we pressed a key we look that it isn't already used, and if so we asign the key to the command
-                        if (PlayerPrefs.GetString("moveLeft") != kcode.ToString() && PlayerPrefs.GetString("moveRight") != kcode.ToString() && PlayerPrefs.GetString("jump") != kcode.ToString() && PlayerPrefs.GetString("dash") != kcode.ToString())
+                        if (PlayerPrefs.GetString("moveLeft") != kcode.ToString() && PlayerPrefs.GetString("moveRight") != kcode.ToString() && PlayerPrefs.GetString("jump") != kcode.ToString() && PlayerPrefs.GetString("dash") != kcode.ToString() && PlayerPrefs.GetString("pause") != kcode.ToString())
                         {
                             var button = (Sprite)GetType().GetField(kcode.ToString()).GetValue(this);
                             if (action == 0)
@@ -201,5 +201,9 @@ public class Controls : MonoBehaviour
         action = a;
         waitingKey = true;
         changeButton.SetActive(true);
+        //We change the text depending on the selected language
+        if (PlayerPrefs.GetInt("language") == 0) changeButtonText.text = "Press the button you want to use.";
+        else if (PlayerPrefs.GetInt("language") == 1) changeButtonText.text = "Presiona el botón que quieres usar.";
+        else if (PlayerPrefs.GetInt("language") == 2) changeButtonText.text = "Sakatu erabili nahi duzun botoia.";
     }
 }
