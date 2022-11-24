@@ -184,7 +184,7 @@ public class Controls : MonoBehaviour
                             else if (PlayerPrefs.GetInt("language") == 2) changeButtonText.text = "Botoia jadanik erabilita dago, beste bat sakatu.";
                         }
                     }
-                    else
+                    else if(kcode.ToString() != "LeftApple")
                     {
                         if (PlayerPrefs.GetInt("language") == 0) changeButtonText.text = "This button is not supported, press another one.";
                         else if (PlayerPrefs.GetInt("language") == 1) changeButtonText.text = "Este botón no esta soportado, presiona otro.";
