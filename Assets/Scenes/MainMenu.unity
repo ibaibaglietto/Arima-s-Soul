@@ -13258,7 +13258,7 @@ MonoBehaviour:
 
 
     Music:
-    Astraction (http://www.abstractionmusic.com/)'
+    Astraction (www.abstractionmusic.com)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20994151c7b6f8c4eba39cddbf817a25, type: 2}
   m_sharedMaterial: {fileID: -1646839104913242238, guid: 20994151c7b6f8c4eba39cddbf817a25, type: 2}
@@ -19285,8 +19285,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voices:\nProduced by Dillon Becker\nVoice actor: Karen Cenon\n\nArt (OpenGameArt)\nCoin:
-    Puddin \nCharacter: skoam \nPlatforms and background: Jetrel"
+  m_text: "Voices:\nProduced by Dillon Becker\nVoice actor: Karen Cenon\n\nArt \nCoin:
+    Puddin (OpenGameArt)\nCharacter: skoam (OpenGameArt)\nPlatforms and background:
+    Jetrel (OpenGameArt)\nKeyboard and mouse UI: vryell (itch.io)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20994151c7b6f8c4eba39cddbf817a25, type: 2}
   m_sharedMaterial: {fileID: -1646839104913242238, guid: 20994151c7b6f8c4eba39cddbf817a25, type: 2}
@@ -19313,7 +19314,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.85
+  m_fontSize: 56.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

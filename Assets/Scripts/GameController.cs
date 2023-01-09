@@ -43,8 +43,9 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-        //We make the cursor invisible, because we don't need it when we are playing
+        //We make the cursor invisible, because we don't need it when we are playing. We also lock it on the window.
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
         //We change the camera size depending on the resolution
         if (Mathf.Abs((float)PlayerPrefs.GetInt("resolutionW") / PlayerPrefs.GetInt("resolutionH") - 16.0f / 9.0f) < 0.0001f ) mainCamera.orthographicSize = 11.34812f;
         else if (Mathf.Abs((float)PlayerPrefs.GetInt("resolutionW") / PlayerPrefs.GetInt("resolutionH") - 16.0f / 10.0f) < 0.0001f) mainCamera.orthographicSize = 12.63513f;
@@ -118,6 +119,19 @@ public class GameController : MonoBehaviour
             }
         }
         
+    }
+
+    //We pause the game when the player alt tabs.
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus && !paused && !starting)
+        {
+            paused = !paused;
+            Cursor.visible = paused;
+            Time.timeScale = System.Convert.ToInt32(!paused);
+            pauseMenu.SetActive(paused);
+            player.SetWait(paused);
+        }
     }
 
     //Function to restart the level

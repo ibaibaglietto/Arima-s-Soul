@@ -299,13 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 10
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -320,6 +317,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &144748549
 Rigidbody2D:
   serializedVersion: 4
@@ -506,13 +506,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 7
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -527,6 +524,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &169735705
 Rigidbody2D:
   serializedVersion: 4
@@ -977,13 +977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 1
   delay: 0
-  jumpClip: {fileID: 8300000, guid: edfc54d3cab482b44a9f03fa26207c8d, type: 3}
-  dashClip: {fileID: 8300000, guid: 2a490e1339aa23345975aa7f1c6ebe30, type: 3}
-  deathClip: {fileID: 8300000, guid: a2b62d199d73e5543a1a6e34814b2994, type: 3}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 7230280347493021936, guid: f0bd65309f685cb438cbb25415ed4523, type: 3}
+  isPlayer: 1
   jump: 0
   speed: 0
   falling: 0
@@ -998,6 +995,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 8300000, guid: edfc54d3cab482b44a9f03fa26207c8d, type: 3}
+  dashClip: {fileID: 8300000, guid: 2a490e1339aa23345975aa7f1c6ebe30, type: 3}
+  deathClip: {fileID: 8300000, guid: a2b62d199d73e5543a1a6e34814b2994, type: 3}
 --- !u!82 &208225152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1424,13 +1424,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 9
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -1445,6 +1442,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &277785708
 Rigidbody2D:
   serializedVersion: 4
@@ -1733,13 +1733,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 21
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -1754,6 +1751,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &294343392
 Rigidbody2D:
   serializedVersion: 4
@@ -2844,10 +2844,10 @@ RectTransform:
   m_Father: {fileID: 1402182515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 217.88557, y: -51.081512}
-  m_SizeDelta: {x: 4819.398, y: 3423.5303}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.005004883, y: -0.005004883}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476887691
 MonoBehaviour:
@@ -3049,13 +3049,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 24
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -3070,6 +3067,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &497310452
 Rigidbody2D:
   serializedVersion: 4
@@ -3799,13 +3799,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 20
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -3820,6 +3817,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &574963993
 Rigidbody2D:
   serializedVersion: 4
@@ -4006,13 +4006,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 16
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -4027,6 +4024,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &604567073
 Rigidbody2D:
   serializedVersion: 4
@@ -4213,13 +4213,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 22
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -4234,6 +4231,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &614576075
 Rigidbody2D:
   serializedVersion: 4
@@ -4451,13 +4451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 11
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -4472,6 +4469,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &721914054
 Rigidbody2D:
   serializedVersion: 4
@@ -5554,13 +5554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 13
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -5575,6 +5572,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &901814343
 Rigidbody2D:
   serializedVersion: 4
@@ -5792,13 +5792,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 2
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -5813,6 +5810,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &906347661
 Rigidbody2D:
   serializedVersion: 4
@@ -6317,13 +6317,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 8
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -6338,6 +6335,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1041651332
 Rigidbody2D:
   serializedVersion: 4
@@ -6595,13 +6595,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 15
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -6616,6 +6613,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1103651678
 Rigidbody2D:
   serializedVersion: 4
@@ -6999,13 +6999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 24
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -7020,6 +7017,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1139212716
 Rigidbody2D:
   serializedVersion: 4
@@ -7206,13 +7206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 6
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -7227,6 +7224,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1166258656
 Rigidbody2D:
   serializedVersion: 4
@@ -7728,13 +7728,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 14
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -7749,6 +7746,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1274809183
 Rigidbody2D:
   serializedVersion: 4
@@ -8382,13 +8382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 1
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -8403,6 +8400,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1404600620
 Rigidbody2D:
   serializedVersion: 4
@@ -8744,13 +8744,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 12
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -8765,6 +8762,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1418309931
 Rigidbody2D:
   serializedVersion: 4
@@ -8951,13 +8951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 17
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -8972,6 +8969,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1421912939
 Rigidbody2D:
   serializedVersion: 4
@@ -9546,13 +9546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 3
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -9567,6 +9564,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1564337845
 Rigidbody2D:
   serializedVersion: 4
@@ -10716,13 +10716,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 4
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -10737,6 +10734,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1774316247
 Rigidbody2D:
   serializedVersion: 4
@@ -11069,13 +11069,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 18
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -11090,6 +11087,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1831858578
 Rigidbody2D:
   serializedVersion: 4
@@ -11553,13 +11553,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 19
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -11574,6 +11571,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &1881397235
 Rigidbody2D:
   serializedVersion: 4
@@ -12088,13 +12088,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 23
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -12109,6 +12106,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &2038825224
 Rigidbody2D:
   serializedVersion: 4
@@ -12295,13 +12295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428c5e821da6b7d448013dbff257c6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
   delay: 5
-  jumpClip: {fileID: 0}
-  dashClip: {fileID: 0}
-  deathClip: {fileID: 0}
   inputHandler: {fileID: 1411690201}
   dashPrefab: {fileID: 8831908874120944413, guid: 2cd2b42f61eac85428cdb65d86278fc9, type: 3}
+  isPlayer: 0
   jump: 0
   speed: 0
   falling: 0
@@ -12316,6 +12313,9 @@ MonoBehaviour:
   activateTime: 0
   gravity: 0
   waiting: 0
+  jumpClip: {fileID: 0}
+  dashClip: {fileID: 0}
+  deathClip: {fileID: 0}
 --- !u!50 &2091292956
 Rigidbody2D:
   serializedVersion: 4

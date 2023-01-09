@@ -69,7 +69,12 @@ public class NormalPhysicsComponent : PhysicsComponent
             if (gameObject.dashing)
             {
                 gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.lookingRight * 20.0f, 0.0f);
-                if (Time.fixedTime - lastDash > 0.25f) gameObject.dashing = false;
+                gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+                if (Time.fixedTime - lastDash > 0.25f)
+                {
+                    gameObject.dashing = false;
+                    gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+                }
             }
         }
         //If the skeleton is dead or waiting the x velocity will be 0

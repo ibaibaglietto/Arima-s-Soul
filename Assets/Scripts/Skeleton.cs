@@ -68,6 +68,7 @@ public class Skeleton : MonoBehaviour
     public void SetWait(bool w)
     {
         waiting = w;
+        if (!w && isPlayer) input.CheckInputs(this);
     }
 
     //Functions to change the variables of the movement of the skeleton

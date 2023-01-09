@@ -377,7 +377,7 @@ public class ArimaGraphicsComponent : GraphicsComponent
                 }
                 break;
             case State.STATE_DASHING_RIGHT:
-                if (gameObject.GetComponent<SpriteRenderer>().color.a > 0.1f) gameObject.CreateDashShadow();
+                if (gameObject.GetComponent<SpriteRenderer>().color.a > 0.1f && !gameObject.waiting) gameObject.CreateDashShadow();
                 if (gameObject.dead)
                 {
                     if (gameObject.isPlayer)
@@ -400,7 +400,7 @@ public class ArimaGraphicsComponent : GraphicsComponent
                 }
                 break;
             case State.STATE_DASHING_LEFT:
-                if(gameObject.GetComponent<SpriteRenderer>().color.a > 0.1f) gameObject.CreateDashShadow();
+                if(gameObject.GetComponent<SpriteRenderer>().color.a > 0.1f && !gameObject.waiting) gameObject.CreateDashShadow();
                 if (gameObject.dead)
                 {
                     if (gameObject.isPlayer)

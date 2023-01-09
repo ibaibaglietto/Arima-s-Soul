@@ -44,6 +44,10 @@ public class FollowInputComponent : InputComponent
         if (lastCommand >= max) lastCommand = 0; 
         commandNumb = 0;
     }
+    //We will only use this with the player
+    public override void CheckInputs(Skeleton gameObject)
+    {
+        
+    }
 
-  
 }
