@@ -43,11 +43,11 @@ public class NormalPhysicsComponent : PhysicsComponent
             //We change the gravity to make the skeleton fall faster when the player isn't pressing the jump button
             if (gameObject.gravity) gameObject.GetComponent<Rigidbody2D>().gravityScale = 3;
             else gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-            //We only jump if the skeleton is in the ground
+            //We only jump if the skeleton is grounded
             if (gameObject.jump && m_Grounded)
             {
                 m_Grounded = false;
-                velY = 8.0f;
+                velY = 9.0f;
                 gameObject.onAir = true;
             }
             //We put the skeleton in falling state if the y velocity is negative.

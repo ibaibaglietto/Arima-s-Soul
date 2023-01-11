@@ -35,8 +35,9 @@ public class Skeleton : MonoBehaviour
     //An int to create the shadows that will follow the player
     private static readonly int start = 1250;
     //We will initialize the components looking if it is the player and the delay we need to apply
-    void Start()
+    void Awake()
     {
+        inputHandler = GameObject.Find("InputHandler").GetComponent<InputHandler>();
         if (isPlayer)
         {
             input = new PlayerInputComponent();
@@ -46,10 +47,15 @@ public class Skeleton : MonoBehaviour
         else
         {
             input = new FollowInputComponent();
-            input.Create((int)(start - delay*50));
             physics = new NormalPhysicsComponent();
             graphics = new ArimaGraphicsComponent();
         }
+    }
+
+    //A function to initialize the follower delay
+    public void InitializeFollower(int d)
+    {
+        input.Create((int)(start - d * 50));
     }
 
     // In update and fixed update we update the components of our skeleton: input, graphics and physics

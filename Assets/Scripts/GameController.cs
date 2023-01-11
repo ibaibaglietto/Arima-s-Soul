@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    //The prefabs of the player and the follower
+    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] private GameObject followerPrefab;
+    [SerializeField] private Transform followersParent;
     //The camera
     [SerializeField] private Camera mainCamera;
     //The shadows that will follow the player
@@ -76,6 +80,12 @@ public class GameController : MonoBehaviour
             resumeText.text = "Jarraitu";
             restartText.text = "Berrabiarazi";
             returnText.text = "Menu printzipalera itzuli";
+        }
+        player = Instantiate(playerPrefab, lastPos, Quaternion.identity).GetComponent<Skeleton>();
+        for (int i = 0; i < 25; i++)
+        {
+            followers[i] = Instantiate(followerPrefab, followersParent).GetComponent<Skeleton>();
+            followers[i].InitializeFollower(i + 1);
         }
         //We put the player waiting
         player.SetWait(true); 
@@ -165,10 +175,10 @@ public class GameController : MonoBehaviour
     {
         float newX = Random.Range(-1.0f, 1.0f);
         float newY = Random.Range(-1.0f, 1.0f);
-        if (lastPos.x - 1.0f < -19.0f) newX = Random.Range(lastPos.x + 1.0f, 20.0f);
-        else if(lastPos.x + 1.0f > 19.0f) newX = Random.Range(-20.0f, lastPos.x - 1.0f);
-        else if(newX < 0.0f) newX = Random.Range(-20.0f, lastPos.x - 1.0f);
-        else newX = Random.Range(lastPos.x + 1.0f, 20.0f);
+        if (lastPos.x - 1.0f < -18.0f) newX = Random.Range(lastPos.x + 1.0f, 19.0f);
+        else if (lastPos.x + 1.0f > 18.0f) newX = Random.Range(-19.0f, lastPos.x - 1.0f);
+        else if (newX < 0.0f) newX = Random.Range(-19.0f, lastPos.x - 1.0f);
+        else newX = Random.Range(lastPos.x + 1.0f, 19.0f);
         if (lastPos.y - 1.5f < -8.8f) newY = Random.Range(lastPos.y + 1.5f, 9.8f);
         else if (lastPos.y + 1.5f > 9.8f) newY = Random.Range(-9.8f, lastPos.y - 1.5f);
         else if (newY < 0.0f) newY = Random.Range(-9.8f, lastPos.y - 1.5f);

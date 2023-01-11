@@ -51,3 +51,6 @@ TagManager:
   - name: Player
     uniqueID: 2586841551
     locked: 0
+  - name: Teleporter
+    uniqueID: 2555981977
+    locked: 0
