@@ -24,6 +24,8 @@ public class MainMenu : MonoBehaviour
     public Texture2D cursorArrow96;
     //The main menu
     private GameObject mainMenu;
+    //The select character menu
+    private GameObject selectCharacterMenu;
     //The settings menu
     private GameObject settingsMenu;
     //The controls menu
@@ -45,6 +47,8 @@ public class MainMenu : MonoBehaviour
     private bool fullScreen;
     //The framerate selector dropdown
     private TMP_Dropdown framerate;
+    //The gameobjects that mark that a character has been selected
+    private GameObject[] characterSelected;
     //The previous screen configuration
     private int prevW;
     private int prevH;
@@ -122,6 +126,7 @@ public class MainMenu : MonoBehaviour
         //We find all the UI gameobjects
         mainMenu = GameObject.Find("Main");
         settingsMenu = GameObject.Find("Settings");
+        selectCharacterMenu = GameObject.Find("SelectCharacter");
         controlsMenu = GameObject.Find("Controls");
         creditsMenu = GameObject.Find("Credits");
         howToPlayMenu = GameObject.Find("HowToPlay");
@@ -177,15 +182,20 @@ public class MainMenu : MonoBehaviour
         masterSlider = GameObject.Find("MainVolumeSlider").GetComponent<Slider>();
         musicSlider = GameObject.Find("MusicSlider").GetComponent<Slider>();
         effectsSlider = GameObject.Find("EffectsSlider").GetComponent<Slider>();
+        characterSelected = new[] { GameObject.Find("Character1Selected"), GameObject.Find("Character2Selected"), GameObject.Find("Character3Selected"), GameObject.Find("Character4Selected"), GameObject.Find("Character5Selected") };
         //We deactivate the parts of the menu that are not shown at the beginning
         settingsMenu.SetActive(false);
+        selectCharacterMenu.SetActive(false);
         controlsMenu.SetActive(false); 
         creditsMenu.SetActive(false);
         for(int i=1; i<howToPlayExplanation.Length;i++) howToPlayExplanation[i].SetActive(false);
         howToPlayPrevButton.interactable = false;
         howToPlayMenu.SetActive(false);
         confirmationMenu.SetActive(false);
+        for (int i = 0; i < characterSelected.Length; i++) characterSelected[i].GetComponent<Image>().color = new Color(0.0f, 1.0f, 0.1144984f, 0.0f);
         //We initialize all the playerprefs
+        //The selected character
+        if (!PlayerPrefs.HasKey("selectedCharacter")) PlayerPrefs.SetInt("selectedCharacter", 0);
         //The resolution width   
         if (!PlayerPrefs.HasKey("resolutionW")) PlayerPrefs.SetInt("resolutionW", 1280);
         //The resolution height
@@ -316,6 +326,8 @@ public class MainMenu : MonoBehaviour
         languageDropdown.value = PlayerPrefs.GetInt("language");
         //We play the menu music a bit delayed to wait to the sound settings to apply
         musicSource.PlayDelayed(0.2f);
+        //We show what character has the player selected
+        characterSelected[PlayerPrefs.GetInt("selectedCharacter")].GetComponent<Image>().color = new Color(0.0f, 1.0f, 0.1144984f, 1.0f);
     }
     //A function to start a new game
     public void NewGame()
@@ -345,6 +357,25 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    //Function to open and close the select character menu
+    public void OpenSelectCharacterMenu()
+    {
+        mainMenu.SetActive(false);
+        selectCharacterMenu.SetActive(true);
+    }
+
+    public void CloseSelectCharacterMenu()
+    {
+        mainMenu.SetActive(true);
+        selectCharacterMenu.SetActive(false);
+    }
+    //Function to set the selected character
+    public void SetSelectedCharacter(int c)
+    {
+        characterSelected[PlayerPrefs.GetInt("selectedCharacter")].GetComponent<Image>().color = new Color(0.0f, 1.0f, 0.1144984f, 0.0f);
+        PlayerPrefs.SetInt("selectedCharacter", c);
+        characterSelected[PlayerPrefs.GetInt("selectedCharacter")].GetComponent<Image>().color = new Color(0.0f, 1.0f, 0.1144984f, 1.0f);
+    }
     //Function to save the settings
     public void OpenSettings()
     {

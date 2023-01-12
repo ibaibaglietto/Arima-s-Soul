@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     //The prefabs of the player and the follower
-    [SerializeField] private GameObject playerPrefab;
-    [SerializeField] private GameObject followerPrefab;
+    [SerializeField] private GameObject[] playerPrefab;
+    [SerializeField] private GameObject[] followerPrefab;
     [SerializeField] private Transform followersParent;
     //The camera
     [SerializeField] private Camera mainCamera;
@@ -81,10 +81,10 @@ public class GameController : MonoBehaviour
             restartText.text = "Berrabiarazi";
             returnText.text = "Menu printzipalera itzuli";
         }
-        player = Instantiate(playerPrefab, lastPos, Quaternion.identity).GetComponent<Skeleton>();
+        player = Instantiate(playerPrefab[PlayerPrefs.GetInt("selectedCharacter")], lastPos, Quaternion.identity).GetComponent<Skeleton>();
         for (int i = 0; i < 25; i++)
         {
-            followers[i] = Instantiate(followerPrefab, followersParent).GetComponent<Skeleton>();
+            followers[i] = Instantiate(followerPrefab[PlayerPrefs.GetInt("selectedCharacter")], followersParent).GetComponent<Skeleton>();
             followers[i].InitializeFollower(i + 1);
         }
         //We put the player waiting
